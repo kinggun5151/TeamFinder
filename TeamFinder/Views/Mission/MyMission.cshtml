@@ -1,0 +1,47 @@
+﻿@using TeamFinder.Models.Entities;
+@model List<Mission>;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_DashBoardLayout.cshtml";
+}
+
+@section StyleSheet{
+    <link rel="stylesheet" href="~/css/Mission/MyMissionStyle.css">
+}
+
+<div class="table-container">
+<table id="myTable">
+    <thead>
+        <tr>
+            <th>نام</th>
+            <th>توضیحات</th>
+            <th>نوع</th>
+            <th>وضعیت</th>
+            <th>عملیات</th>
+        </tr>
+    </thead>
+    <tbody>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <tr>
+                    <td>@Model[i].Name</td>
+                    <td>@Model[i].Description</td>
+                    <td>@Model[i].Class</td>
+                    <td>@Model[i].IsActive</td>
+                    <td>
+                        <a class="more-info">اطلاعات بیشتر</a>
+             
+                    </td>
+                </tr>
+            }
+        
+    </tbody>
+    
+</table>
+    <a asp-action="AddMission" asp-controller="AddMission" class="slide-item">Add Mission</a>
+  </div>
+
+
+@section Scripts{
+    <script src="~/js/MyMissionScript.js"></script>
+}

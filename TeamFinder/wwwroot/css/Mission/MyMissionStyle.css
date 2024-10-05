@@ -1,0 +1,49 @@
+
+.table-container {
+    position: relative;
+    left: -135px;
+    width: 80%;
+    margin: 40px auto;
+    overflow-x: auto;
+}
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+  }
+  
+  td {
+    background-color: #fff;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+.more-info {
+    cursor: pointer !important;
+    color: blue !important;
+    text-decoration: underline !important;
+}

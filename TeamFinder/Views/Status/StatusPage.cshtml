@@ -1,0 +1,98 @@
+﻿@using TeamFinder.Models.Entities
+@model Person
+@{
+    ViewData["Title"] = "StatusPage";
+    Layout = "~/Views/Shared/_DashBoardLayout.cshtml";
+}
+
+@section StyleSheet {
+    <link rel="stylesheet" href="~/css/Css Reset/reset.css">
+    <link rel="stylesheet" href="~/css/Root/Var.css">
+    <link rel="stylesheet" href="~/css/StatusPage/StatusStyle.css">
+}
+<main class="continer">
+    <h1 class="status-title">وضعیت</h1>
+
+    <ul class="status-items">
+        <li class="list-item">
+            <label>
+                نام کاربری:
+                <span>@Model.Username</span>
+            </label>
+        </li>
+        <li class="list-item">
+            <label>
+                سطح:
+                <span>@Model.Level</span>
+            </label>
+        </li>
+        <li class="list-item">
+            حرفه:
+            <label>
+
+                <span>@Model.Class</span>
+            </label>
+        </li>
+        <li class="list-item">
+            <label>
+                انجمن ها:
+                <span>جاستیس لیگ</span>
+            </label>
+        </li>
+        <li class="list-item">
+            <label>
+                گروه ها:
+                <span>برادرهود</span>
+            </label>
+        </li>
+
+        <li class=" list-item">
+            <label class="skils-title">
+                توانایی ها:
+                <ul class="skills">
+
+                    <li>
+                        <span>شلورم ایپسوم متن از صنعت چاپ</span>
+
+                    </li>
+                    ,
+                    <li>
+                        <span>شلورم ایپسوم متن سا از صنعت چاپ</span>
+
+                    </li>
+                    ,
+                    <li>
+                        <span>شلورم ایپسوم متن سا از صنعت چاپ</span>
+
+                    </li>
+                    ,
+                    <li>
+                        <span>شلورم ایپسوم متن سا از صنعت چاپ</span>
+
+                    </li>
+                    ,
+                    <li>
+                        <span>شلورم ایپسوم متن سا از صنعت چاپ</span>
+
+                    </li>
+
+                </ul>
+            </label>
+
+        </li>
+        <li class="list-item">
+            <label>
+                ماموریت ها:
+                <span>آزادی گاتهام</span>
+            </label>
+        </li>
+        <li class="list-item info">
+            <label>
+                درباره من:
+                <p>@Model.PersonalInfo.Description</p>
+            </label>
+            
+        </li>
+    </ul>
+</main>
+

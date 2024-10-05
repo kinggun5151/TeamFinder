@@ -1,0 +1,16 @@
+:root{
+    --secendry-BackGround-color: rgb(255, 255, 255);
+    --box-shadow: 0px 4px 15px -4px rgba(0,0,0,0.5); 
+    --transition: all .2s linear ;
+    --border:1.5px solid #3282B8;
+    --heavy--border:3px solid #3282B8;
+    --border-radius:6px 40px 6px 40px;
+    --primery-color: #1B262C;
+    --word--hover--color:#BBE1FA;
+    --footer-BackGround-color:#1B262C;
+    --test:#0F4C75;
+    --test2:#3282B8;
+    --test3:#BBE1FA;
+
+
+}
